@@ -31,7 +31,7 @@
     flex-direction: row;
     align-items: center;
     gap: 50px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -40,11 +40,12 @@
     padding: 15px 35px;
     border-radius: 50px;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 5px solid transparent;
+    transition: 0.3s;
 }
 
 .introduction-connect:hover{
-    border: 2px solid white;
+    border: 5px solid white;
 }
 
 .introduction-resume{
@@ -52,15 +53,12 @@
     padding: 15px 35px;
     border-radius: 50px;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 5px solid transparent;
+    transition: 0.3s;
 }
 
 .introduction-resume:hover{
-    border: 2px solid white;
-}
-
-.letter {
-    transition: color 0.3s ease;
+    border: 5px solid white;
 }
 
 .letter:hover {

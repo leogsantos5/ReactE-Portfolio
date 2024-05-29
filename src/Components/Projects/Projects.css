@@ -42,12 +42,12 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .project-links a:hover {
-  color: #512bd4;
+  color: white;
 }
 
 .project-links a svg {
@@ -55,14 +55,15 @@
 }
 
 .project-link {
-  border: 1px solid white;
+  border: 5px solid #512bd4;
   padding: 8px;
   border-radius: 10px;
   transition: 0.3s;
+  background-color: #512bd4;
 }
 
 .project-link:hover {
-  border: 1px solid #512bd4;
+  border: 5px solid white;
 }
 
 .udemy-link {
