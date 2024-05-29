@@ -1,0 +1,70 @@
+/* Projects.css */
+.projects {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center the project items */
+}
+
+.project {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px #512bd4;
+  text-align: center; 
+  max-width: 90%;
+}
+
+.project h2 {
+  margin-top: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  color: #512bd4;
+}
+
+.project-links a svg {
+  margin-right: 5px;
+}
+
+.project-link {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-link:hover {
+  border: 1px solid #512bd4;
+}
+
+.udemy-link {
+  margin-left: 10px;
+}

@@ -1,0 +1,69 @@
+.introduction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 120px;
+}
+
+.introduction img {
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire space */
+  border-radius: 30%;
+}
+
+.introduction h1{
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.introduction p{
+    width: 50%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.introduction-action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.introduction-connect{
+    background: #512bd4;
+    padding: 15px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.introduction-connect:hover{
+    border: 2px solid white;
+}
+
+.introduction-resume{
+    background: #512bd4;
+    padding: 15px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.introduction-resume:hover{
+    border: 2px solid white;
+}
+
+.letter {
+    transition: color 0.3s ease;
+}
+
+.letter:hover {
+    color: #512bd4;
+}
+
