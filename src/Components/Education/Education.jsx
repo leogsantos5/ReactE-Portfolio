@@ -1,4 +1,3 @@
-import React from 'react'
 import './Education.css'
 import ISTLogo from '../../assets/ISTLogo.jpeg'
 

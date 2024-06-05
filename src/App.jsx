@@ -1,4 +1,3 @@
-import React from 'react'
 import CustomNavbar from './Components/Navbar/Navbar'
 import Introduction from './Components/Introduction/Introduction';
 import Skills from './Components/Skills/Skills';

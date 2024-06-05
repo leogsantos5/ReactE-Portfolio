@@ -1,4 +1,3 @@
-import React from 'react';
 import './Projects.css'; 
 import { FaGithub } from 'react-icons/fa';
 import UdemyLogo from '../../assets/UdemyLogo.svg'
