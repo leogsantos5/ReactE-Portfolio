@@ -7,7 +7,7 @@ import baLogo from '../../assets/BALogo.jpeg'
 const Experience = () => {
     return (
         <div className='experience-section' style={{marginBottom: 100}}>
-                <hr style={{borderTop: '1px solid white', width: '100%'}}/>
+                <hr style={{borderTop: '1px solid white', width: '95%'}}/>
                 <h2 style={{ marginBottom: 30, marginTop: 90, fontSize: 60, textAlign: 'center' }}>Experience</h2>               
                 <div className="card ba">
                     <div className="job-section">
