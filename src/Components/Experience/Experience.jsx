@@ -1,4 +1,3 @@
-import React from 'react'
 import './Experience.css'
 import softinsaLogo from '../../assets/SoftinsaLogo.png' 
 import quatenusLogo from '../../assets/QuatenusLogo.png'
@@ -23,8 +22,8 @@ const Experience = () => {
                     </div>
                     <div className="normal-text" style={{ fontWeight: 500, fontSize: 17, marginTop: 15 }}>                 
                         <p>
-                            - Compiled and created an installer for the department's <b>C#</b> and <b>VB.NET</b> SolidWorks Add-in. This was
-                            used by the Product Design team and was in constant development.
+                           - Compiled and created an installer for the department&apos;s <b>C#</b> and <b>VB.NET</b> SolidWorks Add-in. This was
+                             used by the Product Design team and was in constant development.
                         </p>
                         <p>
                             - On that Add-in, I added new User Interfaces using <b>Windows Forms</b> and changed some existing windows on
@@ -40,7 +39,7 @@ const Experience = () => {
                     <div className="job-section">
                         <div className="job-summary-item">
                             <div className="job-title" style={{fontWeight: 700, fontSize: 26}}>.NET Developer | Quatenus - WWIL</div>
-                            <div className="summary-phrase" style={{fontWeight: 600, fontSize: 18}}>Fullstack development on the company's main web application</div>
+                            <div className="summary-phrase" style={{fontWeight: 600, fontSize: 18}}>Fullstack development on the company&apos;s main web application</div>
                     </div>
                     <div>
                         <img className='quatenus-logo' src={quatenusLogo}></img>
@@ -52,12 +51,12 @@ const Experience = () => {
                     </div>
                     <div className="normal-text" style={{ fontWeight: 500, fontSize: 17, marginTop: 15 }}>                 
                         <p>
-                            - Worked on the frontend of the company's main product, its web application in <b>ASP.NET WebForms</b>, using <b>HTML CSS</b>
+                            - Worked on the frontend of the company&apos;s main product, its web application in <b>ASP.NET WebForms</b>, using <b>HTML CSS</b>
                             , <b>Javascript</b> and <b>C#</b>. I developed new features and pages according to the requirements of our clients.                   
                         </p>
                         <p>
                             - Created and changed existing web services and their functionality on our main <b>ASP.NET Web API</b>, to suit the
-                            needs of new features of both the company's web application and all its different mobile applications.
+                            needs of new features of both the company&apos;s web application and all its different mobile applications.
                             The ORM on the web services is <b>Linq2SQL</b>. Their debugging and testing was made using <b>Postman API</b>.                  
                         </p>
                         <p>
@@ -72,7 +71,7 @@ const Experience = () => {
                     <div className="job-section">
                         <div className="job-summary-item">
                             <div className="job-title" style={{fontWeight: 700, fontSize: 26}}>.NET Developer | Softinsa</div>
-                            <div className="summary-phrase" style={{fontWeight: 600, fontSize: 18}}>Fullstack development on the clients' web applications</div>
+                            <div className="summary-phrase" style={{fontWeight: 600, fontSize: 18}}>Fullstack development on the clients&apos; web applications</div>
                         </div>
                     <div>
                         <img className='softinsa-logo' src={softinsaLogo}></img>

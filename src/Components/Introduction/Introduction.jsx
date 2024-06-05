@@ -1,4 +1,3 @@
-import React from 'react'
 import './Introduction.css'
 import profileImage from '../../assets/LinkedinFoto.jpeg'
 

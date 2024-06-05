@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Navbar.css'
 import fotoPerfil from '../../assets/DotNetLogo.png'
 import { Link } from 'react-scroll';
