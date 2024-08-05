@@ -3,6 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
+    margin: 0 5% 50px 5%;
+}
+
+.education-section-title{
+    margin-bottom: 30px;
+    font-size: 60px;
+    margin-top: 60px;
 }
 
 .university-degree-section{
@@ -17,14 +25,33 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 26px;
+}
+
+.courses-section span{
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .courses-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-auto-rows: minmax(10px, auto); 
-    gap: 20px 70px; 
+    gap: 20px 10px; 
     width: 100%;
+    font-weight: 500px;
+    font-size: 20px;
+    margin-top: 30px; 
+}
+
+.course{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    text-align: center;       /* Center text within the div */  
+    margin-bottom: 4px;
 }
 
 .education-certificate:hover{
@@ -47,6 +74,61 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
-    gap: 50px;
+    margin: 0px 10% 40px 10%;
+}
+
+.ist-logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area and maintains aspect ratio */
+    object-position: center; /* Center the image within its container */
+}
+
+.centered-heading {
+    text-align: center;
+    font-size: 28px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .courses-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;    
+        margin-top: 20px;
+    }
+
+    .ist-logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* This will ensure the image covers the container */
+        object-position: center; /* Center the image within its container */
+    }
+
+    .ist-logo-section{
+        margin-bottom: 20px;
+    }
+
+    .education-section-title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .education-section{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+
+    .education-section-title{
+        font-size: 50px;
+    }
+
+    .centered-heading{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
 }

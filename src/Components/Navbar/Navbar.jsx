@@ -1,23 +1,41 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Navbar.css'
 import fotoPerfil from '../../assets/DotNetLogo.png'
-import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import NavLinks from './NavLinks';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  const toggleNavbarMobile = () => {
+    setMenuOpen(!menuOpen);
+  }
+
+   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
     
   return (
-      <div className='navbar'>
-          <img src={fotoPerfil} className='netLogo' alt="netLogo" />
-          <ul className="nav-menu">
-            <Link className={activeLink === 'home' ? 'active' : ''} to="home" spy={true} smooth={true} duration={200} offset={-100} onSetActive={() => setActiveLink('home')}>Introduction</Link>
-            <Link className={activeLink === 'skills' ? 'active' : ''} to="skills" spy={true} smooth={true} duration={200} offset={-20} onSetActive={() => setActiveLink('skills')}>Skills</Link>
-            <Link className={activeLink === 'experience' ? 'active' : ''} to="experience" spy={true} smooth={true} duration={200} offset={+0} onSetActive={() => setActiveLink('experience')}>Experience</Link>
-            <Link className={activeLink === 'education' ? 'active' : ''} to="education" spy={true} smooth={true} duration={200} offset={-70} onSetActive={() => setActiveLink('education')}>Education</Link>
-            <Link className={activeLink === 'projects' ? 'active' : ''} to="projects" spy={true} smooth={true} duration={200} offset={+25} onSetActive={() => setActiveLink('projects')}>Projects</Link>
-          </ul>
-          <div className='nav-connect'></div>
-      </div>
+    <header>
+        <nav className='navbar'>
+            <img src={fotoPerfil} className='netLogo' alt="netLogo" />
+            <NavLinks className="nav-menu" activeLink={activeLink} setActiveLink={setActiveLink} toggleNavbarMobile={toggleNavbarMobile}/>
+            <button className='nav-open-btn' onClick={toggleNavbarMobile}>
+               {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+        </nav>
+        <div className='nav-menu-mobile' style={{ visibility: menuOpen && isMobile ? 'visible' : 'hidden', opacity: menuOpen && isMobile ? 1 : 0 }}>
+            <NavLinks className="mobile-btns" activeLink={activeLink} setActiveLink={setActiveLink} toggleNavbarMobile={toggleNavbarMobile}/>
+        </div>
+    </header>
   )
 }
 

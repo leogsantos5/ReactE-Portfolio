@@ -10,6 +10,11 @@ body{
   font-family: 'Montserrat';
 }
 
+hr{
+  border-top: 2px solid white;
+  width: 99%;
+}
+
 html {
   scroll-behavior: smooth;
 }

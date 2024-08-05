@@ -3,28 +3,41 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 70px;
+}
+
+.skills-section h3{
+    margin-right: 45px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.skills-section h2{
+    margin-right: 45px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    font-size: 70px;
 }
 
 .frontend-skills-div{
     display: flex;
     flex-direction: row;
-    font-size: 30px;
     font-weight: 500;
     gap: 200px;
+    margin-bottom: 50px;
 }
 
 .backend-skills-div{
     display: flex;
     flex-direction: row;
-    font-size: 30px;
     font-weight: 500;
     gap: 70px;
+    margin-bottom: 50px;
 }
 
 .tools-skills-div{
     display: flex;
     flex-direction: row;
-    font-size: 30px;
     font-weight: 500;
     gap: 100px;
 }
@@ -34,4 +47,62 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+@media only screen and (max-width: 1439px) {
+    
+    .frontend-skills-div{
+        gap: 80px;
+    }
+
+    .backend-skills-div{
+        gap: 40px;
+    }
+
+    .tools-skills-div{
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    
+    .frontend-skills-div{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+
+    .backend-skills-div{
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .tools-skills-div{
+        flex-direction: column;
+    }
+
+    .skills-section h2{
+        margin-right: 0px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .skills-section h3{
+        margin-right: 0px;
+        font-size: 40px;
+    }
+
+    .skill-div{
+        width: 300px;
+    }
+
+    .skills-section{
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .skills-section h2{
+        margin-top: 20px;
+    }
 }
