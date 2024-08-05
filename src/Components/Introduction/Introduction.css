@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 32px;
     padding-top: 120px;
+    margin-bottom: 80px;
 }
 
 .introduction img {
   width: 250px; /* Adjust the width as needed */
-  height: 250px; /* Adjust the height as needed */
+  height: auto;
   object-fit: cover; /* Ensures the image covers the entire space */
   border-radius: 30%;
 }
@@ -30,19 +31,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 50px;
     font-size: 22px;
     font-weight: 500;
 }
 
-.introduction-connect{
+.introduction-connect {
+    display: flex; /* Enable flexbox layout */
     background: #512bd4;
     padding: 15px 35px;
     border-radius: 50px;
     cursor: pointer;
     border: 5px solid transparent;
     transition: 0.3s;
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    gap: 10px; /* Add some space between the text and the icon */
 }
+
 
 .introduction-connect:hover{
     border: 5px solid white;
@@ -63,5 +70,39 @@
 
 .letter:hover {
     color: #512bd4;
+}
+
+@media only screen and (max-width: 767px) {
+    .introduction-action{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .introduction h1{
+        width: 90%;
+        font-size: 39px;
+    }
+
+    .introduction p{
+        width: 90%;
+    }
+
+    .introduction{
+        margin-bottom: 40px;
+        gap: 10px;
+    }
+   
+    .introduction img{
+        width: 200px; /* Adjust the width as needed */
+        height: auto; /* Adjust the height as needed */
+        border-radius: 30%;
+    }
+}
+
+@media (min-width: 1800px) {
+  .introduction {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
 

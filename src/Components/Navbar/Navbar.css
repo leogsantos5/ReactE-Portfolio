@@ -11,15 +11,62 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
+
+.nav-menu-mobile {
+      width: 100%;
+      height: 100%; 
+      background-color: #512bd4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2; /* Below the navbar */
+      margin-top: 80px;
+      border-top: 4px solid rgb(249, 247, 247);
+      visibility: hidden;
+      transition: 0.5s;
+      opacity: 0;
+   }
 
  .nav-menu{
     display: flex;
     align-items: center;
     list-style: none;
     gap: 60px;
-    font-size: 25px;
+    font-size: 30px;
+    z-index: 2;
  }
+
+ .mobile-btns{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+   font-size: 300%;
+   font-weight: 600;
+   width: 100%;
+   gap: 40px;
+   padding-bottom: 80px;
+ }
+
+.nav-open-btn{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px
+}
 
  .nav-connect{
     padding: 20px 40px;
@@ -49,4 +96,40 @@
   height: 80px; 
   border-radius: 20%; 
   object-fit: cover; 
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-open-btn {
+        visibility: visible;
+        opacity: 1;
+        font-size: 45px;
+    }
+
+    .nav-menu-mobile {
+      visibility: visible;
+   }
+}
+
+@media only screen and (min-width: 1800px) {
+   .nav-menu{
+      font-size: 35px;
+   }
+}
+
+@media only screen and (max-width: 1439px) {
+   .nav-menu{
+      gap: 30px;
+      font-size: 28px;
+   }
+}
+
+@media only screen and (max-width: 374px) {
+   .mobile-btns {
+      font-size: 250%;
+   }
 }
