@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.254dc036.css",
-    "main.js": "/static/js/main.399efe31.js",
+    "main.css": "/static/css/main.34d998d6.css",
+    "main.js": "/static/js/main.08f7f23d.js",
     "static/media/JavaScriptLogo.png": "/static/media/JavaScriptLogo.649a896f8c09e1c99df5.png",
     "static/media/VisualStudio2022Logo.png": "/static/media/VisualStudio2022Logo.67fe1f6f3f07d341cf99.png",
     "static/media/VSCodeLogo.png": "/static/media/VSCodeLogo.332d9b7dc873badbbcba.png",
     "static/media/AzureDevOpsLogo.png": "/static/media/AzureDevOpsLogo.fb03252cd6645868989e.png",
     "static/media/QuatenusLogo.png": "/static/media/QuatenusLogo.a644ea899bad10e1218f.png",
     "static/media/LinkedinFoto.jpeg": "/static/media/LinkedinFoto.f12d8592083852aafdf4.jpeg",
+    "static/media/BALogo.png": "/static/media/BALogo.0982018c30ac93c8e55d.png",
     "static/media/BlazorLogo.png": "/static/media/BlazorLogo.9f6c714a50187f38afc1.png",
     "static/media/SQLServerLogo.png": "/static/media/SQLServerLogo.8c66b853e644ee572d81.png",
     "static/media/SoftinsaLogo.png": "/static/media/SoftinsaLogo.a3c4518891a225c5cf19.png",
@@ -18,11 +19,11 @@
     "static/media/CSS3Logo.svg": "/static/media/CSS3Logo.ccdd9d9be79fe26dd0a8e24d8334a0f0.svg",
     "index.html": "/index.html",
     "static/media/UdemyLogo.svg": "/static/media/UdemyLogo.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
-    "main.254dc036.css.map": "/static/css/main.254dc036.css.map",
-    "main.399efe31.js.map": "/static/js/main.399efe31.js.map"
+    "main.34d998d6.css.map": "/static/css/main.34d998d6.css.map",
+    "main.08f7f23d.js.map": "/static/js/main.08f7f23d.js.map"
   },
   "entrypoints": [
-    "static/css/main.254dc036.css",
-    "static/js/main.399efe31.js"
+    "static/css/main.34d998d6.css",
+    "static/js/main.08f7f23d.js"
   ]
 }
