@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.34d998d6.css",
-    "main.js": "/static/js/main.08f7f23d.js",
+    "main.js": "/static/js/main.a0cedf13.js",
     "static/media/JavaScriptLogo.png": "/static/media/JavaScriptLogo.649a896f8c09e1c99df5.png",
     "static/media/VisualStudio2022Logo.png": "/static/media/VisualStudio2022Logo.67fe1f6f3f07d341cf99.png",
     "static/media/VSCodeLogo.png": "/static/media/VSCodeLogo.332d9b7dc873badbbcba.png",
@@ -20,10 +20,10 @@
     "index.html": "/index.html",
     "static/media/UdemyLogo.svg": "/static/media/UdemyLogo.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
     "main.34d998d6.css.map": "/static/css/main.34d998d6.css.map",
-    "main.08f7f23d.js.map": "/static/js/main.08f7f23d.js.map"
+    "main.a0cedf13.js.map": "/static/js/main.a0cedf13.js.map"
   },
   "entrypoints": [
     "static/css/main.34d998d6.css",
-    "static/js/main.08f7f23d.js"
+    "static/js/main.a0cedf13.js"
   ]
 }
