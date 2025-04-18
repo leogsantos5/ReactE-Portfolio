@@ -1,29 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.34d998d6.css",
-    "main.js": "/static/js/main.a0cedf13.js",
+    "main.css": "/static/css/main.1bb8343f.css",
+    "main.js": "/static/js/main.14a2759d.js",
+    "static/media/PostgreSQLLogo.png": "/static/media/PostgreSQLLogo.26e05e2c22b684bf6d48.png",
     "static/media/JavaScriptLogo.png": "/static/media/JavaScriptLogo.649a896f8c09e1c99df5.png",
+    "static/media/CursorLogo.png": "/static/media/CursorLogo.22ecd47a926ec46a397b.png",
+    "static/media/LinkedinFoto.jpg": "/static/media/LinkedinFoto.3ea054da4a676352b397.jpg",
     "static/media/VisualStudio2022Logo.png": "/static/media/VisualStudio2022Logo.67fe1f6f3f07d341cf99.png",
     "static/media/VSCodeLogo.png": "/static/media/VSCodeLogo.332d9b7dc873badbbcba.png",
     "static/media/AzureDevOpsLogo.png": "/static/media/AzureDevOpsLogo.fb03252cd6645868989e.png",
     "static/media/QuatenusLogo.png": "/static/media/QuatenusLogo.a644ea899bad10e1218f.png",
-    "static/media/LinkedinFoto.jpeg": "/static/media/LinkedinFoto.f12d8592083852aafdf4.jpeg",
+    "static/media/BootstrapLogo.png": "/static/media/BootstrapLogo.82c226a08f33d5e88798.png",
+    "static/media/JiraLogo.png": "/static/media/JiraLogo.9fe5ae6c6325675b877e.png",
+    "static/media/MilleniumBCPLogo.png": "/static/media/MilleniumBCPLogo.6cfdcb4fc01845d47b02.png",
+    "static/media/CleanArchitectureLogo.png": "/static/media/CleanArchitectureLogo.c521d71c21ab29f31aad.png",
     "static/media/BALogo.png": "/static/media/BALogo.0982018c30ac93c8e55d.png",
+    "static/media/TailwindLogo.png": "/static/media/TailwindLogo.bbd8910672ba80981cb2.png",
     "static/media/BlazorLogo.png": "/static/media/BlazorLogo.9f6c714a50187f38afc1.png",
+    "static/media/DockerLogo.webp": "/static/media/DockerLogo.6f0c0fb9187e569054b6.webp",
     "static/media/SQLServerLogo.png": "/static/media/SQLServerLogo.8c66b853e644ee572d81.png",
-    "static/media/SoftinsaLogo.png": "/static/media/SoftinsaLogo.a3c4518891a225c5cf19.png",
+    "static/media/TypeScriptLogo.png": "/static/media/TypeScriptLogo.0a49b36215d09b71ae5f.png",
+    "static/media/GitLabLogo.png": "/static/media/GitLabLogo.53f7e301706c7f3dea97.png",
     "static/media/ReactLogo.webp": "/static/media/ReactLogo.2a0cac33f155e4a27216.webp",
     "static/media/GitLogo.webp": "/static/media/GitLogo.1d7f227982ffba8617aa.webp",
+    "static/media/RabbitMQLogo.webp": "/static/media/RabbitMQLogo.ac44a5057a29c4907fe8.webp",
     "static/media/PostmanAPILogo.webp": "/static/media/PostmanAPILogo.1ed195ca6d0e2d95ebdb.webp",
-    "static/media/CSharpLogo.svg": "/static/media/CSharpLogo.263f79c821a39b0f21f400bc720b47d0.svg",
-    "static/media/CSS3Logo.svg": "/static/media/CSS3Logo.ccdd9d9be79fe26dd0a8e24d8334a0f0.svg",
+    "static/media/CSharpLogo.svg": "/static/media/CSharpLogo.35b4e76643798d289e34ce46d95f2409.svg",
+    "static/media/CSS3Logo.svg": "/static/media/CSS3Logo.1966e400367b3530b72814297315294a.svg",
     "index.html": "/index.html",
     "static/media/UdemyLogo.svg": "/static/media/UdemyLogo.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
-    "main.34d998d6.css.map": "/static/css/main.34d998d6.css.map",
-    "main.a0cedf13.js.map": "/static/js/main.a0cedf13.js.map"
+    "main.1bb8343f.css.map": "/static/css/main.1bb8343f.css.map",
+    "main.14a2759d.js.map": "/static/js/main.14a2759d.js.map"
   },
   "entrypoints": [
-    "static/css/main.34d998d6.css",
-    "static/js/main.a0cedf13.js"
+    "static/css/main.1bb8343f.css",
+    "static/js/main.14a2759d.js"
   ]
 }
