@@ -126,7 +126,7 @@
     .frontend-skills-div,
     .backend-skills-div,
     .tools-skills-div {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 15px;
         max-width: 100%;
     }
