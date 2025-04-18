@@ -4,105 +4,138 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 70px;
+    padding: 0 20px;
+    scroll-margin-top: 80px;
 }
 
 .skills-section h3{
     margin-right: 45px;
     margin-bottom: 20px;
     font-size: 40px;
+    color: #eee;
 }
 
 .skills-section h2{
     margin-right: 45px;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 70px;
+    color: #eee;
 }
 
 .frontend-skills-div{
-    display: flex;
-    flex-direction: row;
-    font-weight: 500;
-    gap: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
     margin-bottom: 50px;
 }
 
 .backend-skills-div{
-    display: flex;
-    flex-direction: row;
-    font-weight: 500;
-    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
     margin-bottom: 50px;
 }
 
 .tools-skills-div{
-    display: flex;
-    flex-direction: row;
-    font-weight: 500;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .skill-div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-div:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-div span {
+    color: #eee;
+    font-weight: 500;
+    text-align: center;
+}
+
+.skill-div img {
+    transition: transform 0.3s ease;
+}
+
+.skill-div:hover img {
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1439px) {
-    
-    .frontend-skills-div{
-        gap: 80px;
-    }
-
-    .backend-skills-div{
-        gap: 40px;
-    }
-
-    .tools-skills-div{
-        gap: 20px;
+    .frontend-skills-div,
+    .backend-skills-div,
+    .tools-skills-div {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 30px;
     }
 }
 
 @media only screen and (max-width: 1023px) {
-    
-    .frontend-skills-div{
-        flex-direction: column;
+    .frontend-skills-div,
+    .backend-skills-div,
+    .tools-skills-div {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
-        margin-bottom: 80px;
-    }
-
-    .backend-skills-div{
-        flex-direction: column;
-        margin-bottom: 80px;
-    }
-
-    .tools-skills-div{
-        flex-direction: column;
     }
 
     .skills-section h2{
         margin-right: 0px;
         margin-top: 50px;
         margin-bottom: 10px;
+        font-size: 50px;
     }
 
     .skills-section h3{
         margin-right: 0px;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .skill-div{
-        width: 300px;
-    }
-
-    .skills-section{
-        margin-bottom: 40px;
+        padding: 15px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .skills-section h2{
         margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .skills-section h3{
+        font-size: 30px;
+    }
+
+    .frontend-skills-div,
+    .backend-skills-div,
+    .tools-skills-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .skill-div {
+        padding: 12px;
+    }
+
+    .skill-div span {
+        font-size: 14px;
     }
 }

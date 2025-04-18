@@ -1,41 +1,49 @@
 .experience-card {
-  position: relative; /* This is necessary for positioning the logo */
+  position: relative;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
+  margin: 15px 20px;
+  border: 6px solid;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-  border: 6px solid; /* Border color will be set dynamically */
-  margin: 20px 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.experience-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.experience-text {
+  flex: 1;
+}
+
+.experience-text p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .company-logo {
-  width: 200px;
-  height: auto; 
   background-color: white;
-  margin: 0 20px 25px 0;
-}
-
-.experience-card-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.job-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-
-.job-summary-item {
-  margin-bottom: 10px;
-}
-
-.normal-text p {
-  margin-bottom: 10px;
-  font-weight: 500;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 10px;
 }
 
 .job-title {
@@ -43,50 +51,37 @@
   font-size: 22px;
 }
 
-.summary-phrase {
+.job-date {
   font-weight: 600;
   font-size: 18px;
-}
-
-.job-date,
-.job-tech {
-  font-weight: 700;
-  font-size: 16px;
+  color: #eee;
 }
 
 @media (max-width: 767px) {
   .experience-card {
     padding: 15px;
+    width: calc(100% - 30px);
   }
 
-  .experience-card-top {
+  .experience-card-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .company-logo {
-    order: 1;
-    margin-right: 0;
-  }
-
-  .job-section {
-    order: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .job-title {
     font-size: 20px;
   }
 
-  .summary-phrase {
+  .job-date {
     font-size: 16px;
   }
 
-  .job-date,
-  .job-tech {
-    font-size: 14px;
-  }
-
-  .normal-text p {
+  .experience-text p {
     font-size: 14px;
   }
 

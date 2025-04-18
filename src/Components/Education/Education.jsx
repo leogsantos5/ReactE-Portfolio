@@ -1,16 +1,26 @@
 import './Education.css'
 import ISTLogo from '../../assets/ISTLogo.jpeg'
-
+import CertificateModal from './CertificateModal'
+import { useState } from 'react'
 
 const Education = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleViewCertificate = () => {
+        setIsModalOpen(true);
+    };
+
     return (
         <div className='education-section'>
             <h2 className='education-section-title'>Education</h2>
             <div className='university-degree-section'>
-            <h2 className="centered-heading">Bachelor&apos;s Degree in Computer Science and Telecommunications Engineering </h2>
+                <h2 className="centered-heading">Bachelor&apos;s Degree in Computer Science and Telecommunications Engineering </h2>
                 <h2 className="centered-heading">Instituto Superior Técnico, University of Lisbon</h2>
                 <div className='ist-logo-section'>
-                    <img src={ISTLogo} className='ist-logo'/>
+                    <img src={ISTLogo} className='ist-logo' alt="IST Logo"/>
+                </div>
+                <div className='education-certificate' onClick={handleViewCertificate}>
+                    View Degree Certificate
                 </div>
             </div>
             <div className='courses-section'>
@@ -27,8 +37,9 @@ const Education = () => {
                     <div className="course">Operating Systems</div>
                 </div>
             </div>
+            <CertificateModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>   
-  )
+    )
 }
 
 export default Education

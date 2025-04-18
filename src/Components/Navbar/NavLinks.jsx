@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 
 const NavLinks = ({ className, activeLink, setActiveLink, toggleNavbarMobile }) => {
   const links = [
-    { name: 'Introduction', to: 'home', offset: -100, duration: 200 },
-    { name: 'Skills', to: 'skills', offset: -25, duration: 200 },
-    { name: 'Experience', to: 'experience', offset: -70, duration: 200 },
-    { name: 'Education', to: 'education', offset: -30, duration: 200 },
-    { name: 'Projects', to: 'projects', offset: -30, duration: 200 },
+    { name: 'Introduction', to: 'home', offset: -80, duration: 200 },
+    { name: 'Skills', to: 'skills', offset: -80, duration: 200 },
+    { name: 'Experience', to: 'experience', offset: -80, duration: 200 },
+    { name: 'Education', to: 'education', offset: -75, duration: 200 },
+    { name: 'Projects', to: 'projects', offset: -80, duration: 200 },
   ];
+
+  const handleClick = () => {
+    toggleNavbarMobile();
+  };
 
   return (
     <ul className={className}>
@@ -22,7 +26,7 @@ const NavLinks = ({ className, activeLink, setActiveLink, toggleNavbarMobile }) 
           duration={link.duration}
           offset={link.offset}
           onSetActive={() => setActiveLink(link.to)}
-          onClick={toggleNavbarMobile}
+          onClick={handleClick}
         >
           {link.name}
         </Link>

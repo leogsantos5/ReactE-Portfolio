@@ -1,5 +1,5 @@
 import './Introduction.css'
-import profileImage from '../../assets/LinkedinFoto.jpeg'
+import profileImage from '../../assets/LinkedinFoto.jpg'
 import { FaLinkedin } from 'react-icons/fa';
 
 const Introduction = () => {
@@ -13,8 +13,8 @@ const Introduction = () => {
 
     const handleDownloadCV = () => {
         const link = document.createElement('a');
-        link.href = '/CVLeonardoSantos.pdf'
-        link.download = 'CV - Leonardo Santos.pdf';
+        link.href = '/CV-LeonardoSantos.pdf'
+        link.download = 'CV-LeonardoSantos.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -24,7 +24,7 @@ const Introduction = () => {
       <div className='introduction'>
           <img src={profileImage}></img>
           <h1>{title}</h1>
-          <p>I have 2 years of experience within the .NET stack</p>
+          <p>I have more than 2 YOE within the .NET stack</p>
           <div className="introduction-action">
               <div className="introduction-connect" onClick={handleLinkedInClick}>
                   <span style={{ marginTop: 3 }}>LinkedIn</span>
