@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bb8343f.css",
+    "main.css": "/static/css/main.e4c58629.css",
     "main.js": "/static/js/main.14a2759d.js",
     "static/media/PostgreSQLLogo.png": "/static/media/PostgreSQLLogo.26e05e2c22b684bf6d48.png",
     "static/media/JavaScriptLogo.png": "/static/media/JavaScriptLogo.649a896f8c09e1c99df5.png",
@@ -29,11 +29,11 @@
     "static/media/CSS3Logo.svg": "/static/media/CSS3Logo.1966e400367b3530b72814297315294a.svg",
     "index.html": "/index.html",
     "static/media/UdemyLogo.svg": "/static/media/UdemyLogo.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
-    "main.1bb8343f.css.map": "/static/css/main.1bb8343f.css.map",
+    "main.e4c58629.css.map": "/static/css/main.e4c58629.css.map",
     "main.14a2759d.js.map": "/static/js/main.14a2759d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bb8343f.css",
+    "static/css/main.e4c58629.css",
     "static/js/main.14a2759d.js"
   ]
 }
