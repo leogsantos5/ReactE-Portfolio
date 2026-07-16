@@ -1,5 +1,6 @@
 import './Experiences.css'
-import milleniumBCPLogo from '../../assets/MilleniumBCPLogo.png' 
+import dxSparkLogo from '../../assets/DxSparkLogo.svg'
+import milleniumBCPLogo from '../../assets/MilleniumBCPLogo.png'
 import quatenusLogo from '../../assets/QuatenusLogo.png'
 import baLogo from '../../assets/BALogo.png'
 import aceveLogo from '../../assets/AceveLogo.png'
@@ -10,16 +11,33 @@ const Experiences = () => {
     const experiences =
     [
         {
-            title: "Backend .NET Developer",
-            company: "askBlue/Aceve",
-            date: "Sep 2024 - Present",
-            logo: aceveLogo,            
-            borderColor: 'rgb(47, 131, 47)',
+            title: "Full-Stack .NET Developer",
+            company: "DxSpark (powered by Agap2IT)",
+            date: "Sep 2025 - Present",
+            logo: dxSparkLogo,
+            borderColor: 'var(--accent-teal)',
             logoBorderRadius: '1%',
             logoPadding: '5px',
             logoWidth: '200px',
             paragraphs: [
-                "As an askBlue consultant, I'm assigned to Aceve, a scandinavian company in the craft and construction SaaS industry.",
+                "As an Agap2IT consultant assigned to DxSpark, I deliver enterprise applications for banking and fintech clients using .NET 6, ASP.NET Core MVC, SQL Server, Razor, TypeScript and HTML/CSS with Bootstrap, alongside Postman and REST APIs.",
+                "I've been a major contributor to a full-fledged HR platform for Crédito Agrícola, delivered under tight timelines in a high-pressure environment.",
+                "I've worked across multiple projects including BTOC.NET, the Crédito Agrícola Seguros Client Portal, and E-Kwanza, an Angolan digital payments platform.",
+                "I'm currently the primary fully-allocated full-stack developer on E-Kwanza, working across its merchant, client, agent, backoffice and network management apps.",
+                "I collaborate closely with mobile developers, project managers and stakeholders to align backend APIs, integrations and urgent client requirements."
+            ]
+        },
+        {
+            title: "Backend .NET Developer",
+            company: "askBlue/Aceve",
+            date: "Sep 2024 - Aug 2025",
+            logo: aceveLogo,
+            borderColor: 'var(--accent-green)',
+            logoBorderRadius: '1%',
+            logoPadding: '5px',
+            logoWidth: '200px',
+            paragraphs: [
+                "As an askBlue consultant, I was assigned to Aceve, a scandinavian company in the craft and construction SaaS industry.",
                 "Responsible for the development and maintenance of applications and their microservices.",
                 "Using technologies such as C#, .NET 6/8, ASP.NET Core Web API, DDD and Clean Architecture, CQRS with MediatR, EF Core, xUnit, Docker, PostgreSQL, SQL Server, DBeaver, Jira, GitLab and English."
             ]
@@ -29,7 +47,7 @@ const Experiences = () => {
             company: "Softinsa/Millenium BCP",
             date: "Jan 2024 - Aug 2024",
             logo: milleniumBCPLogo,
-            borderColor: 'rgb(195, 13, 104)',
+            borderColor: 'var(--accent-pink)',
             logoBorderRadius: '1%',
             logoPadding: '5px',
             logoWidth: '200px',
@@ -44,7 +62,7 @@ const Experiences = () => {
             company: "Quatenus - WWIL",
             date: "Mar 2023 - Dec 2023",
             logo: quatenusLogo,
-            borderColor: 'rgb(235, 118, 16)',
+            borderColor: 'var(--accent-orange)',
             logoBorderRadius: '1%',
             logoPadding: '5px',
             logoWidth: '200px',
@@ -59,7 +77,7 @@ const Experiences = () => {
             company: "BA Glass",
             date: "Aug 2022 - Feb 2023",
             logo: baLogo,
-            borderColor: 'rgb(143, 26, 88)',
+            borderColor: 'var(--accent-magenta)',
             logoBorderRadius: '50%',
             logoPadding: '1px',
             logoWidth: '80px',
@@ -74,21 +92,24 @@ const Experiences = () => {
     return (
         <div className='experience-section'>
             <hr/>
-            <h2>Experience</h2>               
-            {experiences.map((exp, index) => (
-                <Experience
-                    key={index}
-                    title={exp.title}
-                    company={exp.company}
-                    date={exp.date}
-                    logo={exp.logo}
-                    paragraphs={exp.paragraphs}
-                    borderColor={exp.borderColor}
-                    logoBorderRadius={exp.logoBorderRadius}
-                    logoPadding={exp.logoPadding}
-                    logoWidth={exp.logoWidth}
-                />
-            ))}
+            <h2>Experience</h2>
+            <div className='experience-timeline'>
+                {experiences.map((exp, index) => (
+                    <Experience
+                        key={index}
+                        index={index}
+                        title={exp.title}
+                        company={exp.company}
+                        date={exp.date}
+                        logo={exp.logo}
+                        paragraphs={exp.paragraphs}
+                        borderColor={exp.borderColor}
+                        logoBorderRadius={exp.logoBorderRadius}
+                        logoPadding={exp.logoPadding}
+                        logoWidth={exp.logoWidth}
+                    />
+                ))}
+            </div>
             <hr className='experiences-bottom-line'/>
         </div>
     );

@@ -2,29 +2,59 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 32px;
-    padding-top: 120px;
-    margin-bottom: 80px;
+    gap: var(--space-6);
+    padding-top: 160px;
+    margin-bottom: var(--space-8);
+}
+
+.profile-photo-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+
+.profile-photo-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -14px;
+    background: var(--gradient-brand);
+    border-radius: 30%;
+    filter: blur(28px);
+    opacity: 0.45;
+    z-index: 0;
+}
+
+.profile-photo-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30%;
+  border: 2px solid var(--color-border-glass);
+  z-index: 1;
 }
 
 .introduction img {
-  width: 250px; /* Adjust the width as needed */
-  height: auto;
-  object-fit: cover; /* Ensures the image covers the entire space */
-  border-radius: 30%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.15);
 }
 
 .introduction h1{
     text-align: center;
     width: 70%;
-    font-size: 50px;
+    font-size: var(--fs-h1);
     font-weight: 700;
 }
 
 .introduction p{
     width: 50%;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
+    color: var(--color-text-muted);
 }
 
 .introduction-action{
@@ -32,55 +62,68 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    font-size: 22px;
-    font-weight: 500;
+    gap: var(--space-6);
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.introduction-connect {
-    display: flex; /* Enable flexbox layout */
-    background: #512bd4;
-    padding: 15px 35px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 5px solid transparent;
-    transition: 0.3s;
-    align-items: center; /* Center items vertically */
+.introduction-connect,
+.introduction-resume {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 10px; /* Add some space between the text and the icon */
-}
-
-
-.introduction-connect:hover{
-    border: 5px solid white;
-}
-
-.introduction-resume{
-    background: #512bd4;
+    gap: 10px;
+    background: var(--gradient-brand);
     padding: 15px 35px;
-    border-radius: 50px;
+    border-radius: var(--radius-pill);
     cursor: pointer;
-    border: 5px solid transparent;
-    transition: 0.3s;
+    border: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.introduction-connect:hover,
 .introduction-resume:hover{
-    border: 5px solid white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-brand-glow);
+}
+
+.word {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.letter {
+    display: inline-block;
+    animation: letter-in 0.5s ease both;
+    animation-delay: calc(var(--i) * 12ms);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .letter:hover {
-    color: #512bd4;
+    color: var(--color-brand-light);
+    text-shadow: 0 0 16px var(--color-brand-glow);
+}
+
+@keyframes letter-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .introduction-action{
         flex-direction: column;
-        gap: 20px;
+        gap: var(--space-4);
     }
 
     .introduction h1{
         width: 90%;
-        font-size: 39px;
+        font-size: 34px;
     }
 
     .introduction p{
@@ -88,14 +131,14 @@
     }
 
     .introduction{
-        margin-bottom: 40px;
-        gap: 10px;
+        margin-bottom: var(--space-7);
+        gap: var(--space-3);
+        padding-top: 120px;
     }
-   
-    .introduction img{
-        width: 200px; /* Adjust the width as needed */
-        height: auto; /* Adjust the height as needed */
-        border-radius: 30%;
+
+    .profile-photo-wrapper{
+        width: 240px;
+        height: 240px;
     }
 }
 
@@ -105,4 +148,3 @@
     margin-left: 20%;
   }
 }
-

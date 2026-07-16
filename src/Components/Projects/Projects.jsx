@@ -1,41 +1,46 @@
-import './Projects.css'; 
+import './Projects.css';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import UdemyLogo from '../../assets/UdemyLogo.svg'
+import PatinaLogin from '../../assets/patina/PatinaLogin.jpg'
+import PatinaDashboard from '../../assets/patina/PatinaDashboard.jpg'
+import PatinaRestorationDetail from '../../assets/patina/PatinaRestorationDetail.jpg'
+import PatinaSections from '../../assets/patina/PatinaSections.jpg'
+import PatinaTaskList from '../../assets/patina/PatinaTaskList.jpg'
+import PatinaTaskPhotos from '../../assets/patina/PatinaTaskPhotos.jpg'
+import PatinaClientPortal from '../../assets/patina/PatinaClientPortal.jpg'
 
 const projects = [
   {
-    title: 'Foreign Exchange Rates Manager API',
-    description: `A sophisticated ASP.NET Core 8.0 Web API microservice for managing foreign exchange rates. 
-                  Built with Clean Architecture principles, DDD, CQRS & Mediator Pattern for scalability and maintainability. 
-                  Technologies include Entity Framework Core for data manipulation, SQL Server database, RabbitMQ for message queuing, 
-                  Refit for AlphaVantage API calls and real-time exchange rates, Docker for the local DB and RabbitMQ publisher containers'
-                  local deployment, xUnit and Moq for Unit Testing, FluentValidation for robust data validation and Serilog for logging.`,
-    repoLink: 'https://github.com/leogsantos5/ExchangeRatesManager',
-    udemyLink: '',
-  },
-  {
-    title: 'Killy Ross & Xandi Gavira Barbershop Web App',
-    description: `A full-featured web app with an informational landing page and services showcasing section, a complex booking platform 
-                  and a protected barber admin dashboard for my local barbershop. 
-                  Built with Next.js, React, TypeScript, Tailwind CSS and Supabase with PostgreSQL. 
-                  Features include smart booking algorithm with least-busy barber auto-assignment, phone number validation using NumVerify API, 
-                  SMS reservation confirmation using Twilio API, role-based barber JWT authentication and authorization, 
-                  full CRUD for services, users, and barbers' management and a polished responsive UI for light and dark mode.
-                  Still in constant development, but close to finish. Deployed testing version on Vercel.`,
-    repoLink: 'https://github.com/leogsantos5/KillyBarbershop',
-    udemyLink: '',
-    siteLink: 'https://killy-barbershop.vercel.app/',
-  },
-  {
-    title: 'EAFC 24 Pro Clubs Player Finder Web App',
-    description: "This is a web app that connects EAFC 24 players with each other. A Club Owner can register the club they created in the actual game, on the app, and recruit players. A Free Agent can find a good club to play on that matches his play style and requirements. I built this personal project of mine to put my Blazor and ASP.NET Core skills to use, in something that i'm passionate about. Web App programmed in Blazor WebAssembly with .NET 8. Connected to an ASP.NET Core RESTful Web API, using Entity Framework Core with an SQL Server database. Authentication and role-based Authorization using JWT. All created and designed by me, leogsantos5 (developer name).",
-    repoLink: 'https://github.com/leogsantos5/ProClubsPlayerFinder',
+    title: 'Patina — Car Restoration Management App',
+    description: `A mobile app for managing car restoration projects, built with React Native (Expo) and backed by a modular
+                  ASP.NET Core Minimal API using Clean Architecture in .NET 10. Features restoration tracking, notifications,
+                  role-based authentication, client portals and restorer progress-photo uploads. Deployed with Docker Compose,
+                  Azure App Service, Blob Storage and Azure Database for PostgreSQL, with Azure DevOps for CI/CD and Bruno for
+                  API testing. Currently awaiting Google Play identity verification before public release.`,
+    screenshots: [PatinaLogin, PatinaDashboard, PatinaRestorationDetail, PatinaSections, PatinaTaskList, PatinaTaskPhotos, PatinaClientPortal],
+    featured: true,
     udemyLink: '',
   },
   {
     title: 'React E-Portfolio',
     description: 'This is the website you are seeing. It is my personal E-Portfolio, where I present myself as a Full-Stack .NET Developer, showcasing my skills, experience, education and personal projects. I built this project in React, using also JavaScript, HTML & CSS. All created and designed by me, leogsantos5 (developer name). From scratch, everything.',
     repoLink: 'https://github.com/leogsantos5/ReactE-Portfolio',
+    udemyLink: '',
+  },
+  {
+    title: 'Foreign Exchange Rates Manager API',
+    description: `A sophisticated ASP.NET Core 8.0 Web API microservice for managing foreign exchange rates.
+                  Built with Clean Architecture principles, DDD, CQRS & Mediator Pattern for scalability and maintainability.
+                  Technologies include Entity Framework Core for data manipulation, SQL Server database, RabbitMQ for message queuing,
+                  Refit for AlphaVantage API calls and real-time exchange rates, Docker for the local DB and RabbitMQ publisher containers'
+                  local deployment, xUnit and Moq for Unit Testing, FluentValidation for robust data validation and Serilog for logging.`,
+    repoLink: 'https://github.com/leogsantos5/ExchangeRatesManager',
+    udemyLink: '',
+  },
+  {
+    title: 'EAFC 24 Pro Clubs Player Finder Web App',
+    description: "This is a web app that connects EAFC 24 players with each other. A Club Owner can register the club they created in the actual game, on the app, and recruit players. A Free Agent can find a good club to play on that matches his play style and requirements. I built this personal project of mine to put my Blazor and ASP.NET Core skills to use, in something that i'm passionate about. Web App programmed in Blazor WebAssembly with .NET 8. Connected to an ASP.NET Core RESTful Web API, using Entity Framework Core with an SQL Server database. Authentication and role-based Authorization using JWT. All created and designed by me, leogsantos5 (developer name).",
+    repoLink: 'https://github.com/leogsantos5/ProClubsPlayerFinder',
     udemyLink: '',
   },
   {
@@ -67,13 +72,21 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projects-list">
             {projects.map((project, index) => (
-                <div key={index} className="project">
-                    <h2 style={{fontSize: 24}}>{project.title}</h2>
-                    <p style={{fontSize: 18}}>{project.description}</p>
+                <div key={index} className={`project ${project.featured ? 'project-featured' : ''}`}>
+                    {project.screenshots && (
+                      <div className="project-screenshots">
+                        {project.screenshots.map((screenshot, i) => (
+                          <img key={i} src={screenshot} alt={`${project.title} screenshot ${i + 1}`} />
+                        ))}
+                      </div>
+                    )}
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
                     <div className="project-links">
+                        {project.repoLink && (
                         <a href={project.repoLink} className='project-link'>
                             <FaGithub /> Repository
-                        </a>
+                        </a>)}
                         {project.siteLink && (
                         <a href={project.siteLink} className="project-link site-link">
                             <FaGlobe /> Website
@@ -81,7 +94,7 @@ const Projects = () => {
                         {project.udemyLink && (
                         <a href={project.udemyLink} className="project-link udemy-link">
                             <img src={UdemyLogo} alt="Udemy" style={{ width: '30px', height: '25px' }} />
-                        </a>)}                                     
+                        </a>)}
                     </div>
                 </div>
             ))}

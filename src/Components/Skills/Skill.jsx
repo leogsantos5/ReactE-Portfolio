@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 
-const Skill = ({ name, image, width, widthMobile, marginTop = 0, isMobile }) => {
+const Skill = ({ name, image, icon: Icon, iconColor }) => {
   return (
     <div className='skill-div'>
-      <span style={{textAlign: 'center', fontSize: isMobile ? 35 : 30}}>{name}</span>
-      <img src={image} style={{width: isMobile ? widthMobile : width, marginTop }} alt={`${name} logo`} />
+      <span>{name}</span>
+      {Icon
+        ? <Icon className='skill-icon' color={iconColor} />
+        : <img src={image} alt={`${name} logo`} />}
     </div>
   );
 };
 
 Skill.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  widthMobile: PropTypes.number.isRequired,
-  marginTop: PropTypes.number,
-  isMobile: PropTypes.bool.isRequired
+  image: PropTypes.string,
+  icon: PropTypes.elementType,
+  iconColor: PropTypes.string,
 };
 
 export default Skill;

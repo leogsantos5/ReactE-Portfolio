@@ -1,17 +1,22 @@
+@import './theme.css';
+
 *{
   margin: 0;
   padding: 0;
-} 
+  box-sizing: border-box;
+}
 
 body{
-  height: 100vh;
-  background: #1b1a1c;
-  color:white;
-  font-family: 'Montserrat';
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
 }
 
 hr{
-  border-top: 2px solid white;
+  border: none;
+  border-top: 1px solid var(--color-border-glass);
   width: 99%;
 }
 
