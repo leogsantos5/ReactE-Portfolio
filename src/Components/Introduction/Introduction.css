@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: var(--space-6);
-    padding-top: 160px;
-    margin-bottom: var(--space-8);
+    gap: var(--space-4);
+    padding-top: 90px;
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-7);
 }
 
 .profile-photo-wrapper {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 240px;
+    height: 240px;
 }
 
 .profile-photo-wrapper::before {
@@ -131,14 +132,14 @@
     }
 
     .introduction{
-        margin-bottom: var(--space-7);
+        margin-bottom: var(--space-6);
         gap: var(--space-3);
-        padding-top: 120px;
+        padding-top: 80px;
     }
 
     .profile-photo-wrapper{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
 }
 

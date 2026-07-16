@@ -38,12 +38,6 @@ const projects = [
     udemyLink: '',
   },
   {
-    title: 'EAFC 24 Pro Clubs Player Finder Web App',
-    description: "This is a web app that connects EAFC 24 players with each other. A Club Owner can register the club they created in the actual game, on the app, and recruit players. A Free Agent can find a good club to play on that matches his play style and requirements. I built this personal project of mine to put my Blazor and ASP.NET Core skills to use, in something that i'm passionate about. Web App programmed in Blazor WebAssembly with .NET 8. Connected to an ASP.NET Core RESTful Web API, using Entity Framework Core with an SQL Server database. Authentication and role-based Authorization using JWT. All created and designed by me, leogsantos5 (developer name).",
-    repoLink: 'https://github.com/leogsantos5/ProClubsPlayerFinder',
-    udemyLink: '',
-  },
-  {
     title: 'Complete Blazor (WASM & Server) and ASP.NET API Development',
     description: "My first Blazor project, a Book Store Web App created both in Blazor Server and Blazor WebAssembly. Connected to an ASP.NET Core RESTful Web API in .NET 7, using Entity Framework Core with an SQL Server database. It allows users to see the authors, all the info from their books and add them to a cart to buy. Authentication is made using JWT Tokens. Fantastic introduction to Blazor and ASP.NET Core API design by Trevoir Williams in this Udemy course. Blazor is my favorite frontend framework to develop in, despite liking React too. C# for everything, let's go!",
     repoLink: 'https://github.com/leogsantos5/BookStoreApp',
